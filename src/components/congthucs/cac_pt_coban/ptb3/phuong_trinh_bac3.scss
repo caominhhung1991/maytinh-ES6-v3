@@ -1,0 +1,87 @@
+$font-size-mathjax: 23px;
+$font-size-bac3-k: 24px;
+$color-red: red;
+#bac3 {
+    .nangcao-debai {
+      font-size: 16px;
+    }
+    .input {
+      width: 50px;
+      text-align: center;
+      padding: 5px 0;
+      font-size: 15px;
+    }
+    #error-message-bac3 {
+      display: none;
+      color: red;
+      padding: 2px 20px;
+    }
+  
+    #btnXemBaiGiai-bac3 {
+        display: none;
+        cursor: pointer;
+        outline: none;
+    }
+  
+    #baigiai-bac3 {
+        // display: none;
+        margin: 2px 20px 10px 20px;
+    }
+}
+
+#bac3 {
+  &__k {
+    font-size: $font-size-mathjax;
+  }
+  &__TH1 {
+    &__x1,  &__x2,  &__x3 {
+      font-size: $font-size-mathjax;
+      margin-bottom: 6px;
+    }
+    &__x1 {
+      
+    }
+    &__x2 {
+
+    }
+    &__x3 {
+      
+    }
+  }
+  &__TH2 {
+    &__x {
+      margin: 7px 0;
+    }
+  }
+  &__TH3 {
+    &__x {
+      font-size: $font-size-mathjax;
+      margin-bottom: 6px;
+    }
+  }
+  &__TH4 {
+    &__x {
+      // font-size: $font-size-mathjax;
+      margin-bottom: 6px;
+    }
+  }
+}
+
+.nghiem-bac3 {
+  margin: 4px 0;
+}
+
+#debai-bac3 {
+  color: blue;
+}
+
+.color-red {
+  color: $color-red;
+}
+
+
+#baigiai-bac3 {
+  display: none;
+  color: blue;
+}
+

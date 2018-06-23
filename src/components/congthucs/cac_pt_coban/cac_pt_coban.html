@@ -1,0 +1,170 @@
+<template id='cac-dang-pt-co-ban'>
+  <div class='nangcao-title'>
+    <h3>Các dạng phương trình cơ bản</h3>
+    <i id='closeNangCao' class='fa fa-times'></i>
+  </div>
+  <details class='guide-input' open>
+    <summary class='guide-input-item'>
+      <u>
+        <b>Hướng dẫn nhập:</b>
+      </u>
+    </summary>
+    <div style='color:blue'>
+      <p class='guide-input__item'>* sin(45<small><sup>o</sup></small>) = sin(45deg), cos(45<small><sup>o</sup></small>) = cos(45deg)</p>
+      <p class='guide-input__item'>* a<sup>n</sup> = a^n</p>
+      <p class='guide-input__item'>* &radic;<span class='canbac'>a</span> = sqrt(a), <sup>n</sup>&radic;<span class='canbac'>a</span> = a^(1/n)</p>
+      <p class='guide-input__item'>* log<sup>b</sup><sub style='margin-left:-5px;'>a</sub> = log(b, a)</p>
+      <p class='guide-input__item'>* log<sup>b</sup><sub style='margin-left:-5px;'><i>e</i></sub>, ln(b) = log(b)</p>
+      <p class='guide-input__item'>* log<sup>b</sup><sub style='margin-left:-5px;'><i>10</i></sub>, lg(b) = log10(b); log<sup>b</sup><sub style='margin-left:-5px;'><i>2</i></sub> = log2(b)</p>
+    </div>
+  </details>
+</template>
+
+<template id="ptb1">
+  <details id='bac1'>
+    <summary>Dạng ax + b = 0</summary>
+    <div class='nangcao-debai'>
+      <input value='' type='text' id='a-bac1' class='nangcao-input-nhap' placeholder='nhập a' tabindex='1'>x +
+      <input value='' type='text' id='b-bac1' class='nangcao-input-nhap' placeholder='nhập b' tabindex='2'> = 0
+    </div>
+    <div class='error-message' id='error-message-bac1'></div>
+    <div class='nangcao-ketqua'>
+      <div id='debai-bac1'></div>
+      <button id='btnXemBaiGiai-bac1' class='btn width-95'>Xem bài giải</button>
+    </div>
+    <div id='baigiai-bac1' class='nangcao-giaithich'></div>
+  </details>
+</template>
+
+<template id='ptb2'>
+  <details id='bac2'>
+    <summary>Dạng ax<sup>2</sup> + bx + c = 0, đk: <b>(a ≠ 0)</b></summary>
+    <div class='nangcao-debai'>
+      <input value='' type='text' id='a' class='nangcao-input-nhap' placeholder='nhập a' tabindex='1' onchange='onTinhPTBac2()'>x<sup>2</sup> +
+      <input value='3' type='text' id='b' class='nangcao-input-nhap' placeholder='nhập b' tabindex='2' onchange='onTinhPTBac2()'>x +
+      <input value='2' type='text' id='c' class='nangcao-input-nhap' placeholder='nhập c' tabindex='3' onchange='onTinhPTBac2()'>= 0
+    </div>
+    <div class='error-message' id='error-message-pt2'></div>
+    <div class='nangcao-ketqua'>
+      <div id='debai'></div>
+      <button id='btnXemBaiGiai' class='btn width-95'>Xem bài giải</button>
+    </div>
+    <div id='baigiai' class='nangcao-giaithich'></div>
+  </details>
+</template>
+
+<template id='ptb3'>
+  <details id='bac3'>
+    <summary>Dạng ax<sup>3</sup> + bx<sup>2</sup> + cx + d = 0, đk:<b>(a ≠ 0)</b></summary>
+    <div class='nangcao-debai'>
+      <input value='' class='input' type='text' id='a-bac3' class='nangcao-input-nhap' placeholder='nhập a' tabindex='1'>x<sup>3</sup> +
+      <input value='31' class='input' type='text' id='b-bac3' class='nangcao-input-nhap' placeholder='nhập b' tabindex='2'>x<sup>2</sup> +
+      <input value='1' class='input' type='text' id='c-bac3' class='nangcao-input-nhap' placeholder='nhập c' tabindex='3'>x +
+      <input value='3' class='input' type='text' id='d-bac3' class='nangcao-input-nhap' placeholder='nhập d' tabindex='4'> = 0
+    </div>
+    <div class='error-message' id='error-message-bac3'></div>
+    <div class='nangcao-ketqua'>
+      <div id='debai-bac3'></div>
+      <button id='btnXemBaiGiai-bac3' class='btn width-95'>Xem bài giải</button>
+    </div>
+    <div id='baigiai-bac3' class='nangcao-giaithich'></div>
+  </details>
+</template>
+
+<template id='ptb4'>
+  <details id='bac4'>
+    <summary>Dạng ax<sup>4</sup> + bx<sup>2</sup> + c = 0, đk: <b>(a ≠ 0)</b></summary>
+    <div class='nangcao-debai'>
+      <input value='' type='text' id='a-bac4' class='nangcao-input-nhap' placeholder='nhập a' tabindex='1'>x<sup>4</sup> +
+      <input value='2' type='text' id='b-bac4' class='nangcao-input-nhap' placeholder='nhập b' tabindex='2'>x<sup>2</sup> +
+      <input value='4' type='text' id='c-bac4' class='nangcao-input-nhap' placeholder='nhập c' tabindex='3'>= 0
+    </div>
+    <div class='error-message' id='error-message-bac4'></div>
+    <div class='nangcao-ketqua'>
+      <div id='debai-bac4'></div>
+      <button id='btnXemBaiGiai-bac4' class='btn width-95'>Xem bài giải</button>
+    </div>
+    <div id='baigiai-bac4' class='nangcao-giaithich'></div>
+  </details>
+</template>
+
+<template id='axbyc_template'>
+  <details id='axbyc'>
+    <summary>Dạng ax + by = c, đk:<b>(a<sup>2</sup> + b<sup>2</sup> ≠ 0)</b></summary>
+    <div class='nangcao-debai'>
+      <input value='' type='text' id='a-axbyc' class='nangcao-input-nhap' placeholder='nhập a' tabindex='1' onchange='onTinhPTBac2()'>x +
+      <input value='3' type='text' id='b-axbyc' class='nangcao-input-nhap' placeholder='nhập b' tabindex='2' onchange='onTinhPTBac2()'>y =
+      <input value='2' type='text' id='c-axbyc' class='nangcao-input-nhap' placeholder='nhập c' tabindex='3' onchange='onTinhPTBac2()'>
+    </div>
+    <div class='error-message' id='error-message-axbyc'></div>
+    <div class='nangcao-ketqua'>
+      <div id='debai-axbyc'></div>
+      <button id='btnXemBaiGiai-axbyc' class='btn width-95'>Xem bài giải</button>
+    </div>
+    <div id='baigiai-axbyc' class='nangcao-giaithich'></div>
+  </details>
+</template>
+
+<template id='bac3__k'>
+  \(\frac{{9abc - 2{b^3} - 27{a^2}d}}{{2\sqrt {|\Delta {|^3}} }}\)
+</template>
+
+<template id='bac3__TH1__x1'>
+  \(\frac{{2\sqrt \Delta \cos (\frac{{\arccos (k)}}{3}) - b}}{{3a}}\)
+</template>
+
+<template id='bac3__TH1__x2'>
+  \(\frac{{2\sqrt \Delta \cos (\frac{{\arccos (k)}}{3} - \frac{{2\pi }}{3}) - b}}{{3a}}\)
+</template>
+
+<template id='bac3__TH1__x3'>
+  \(\frac{{2\sqrt \Delta \cos (\frac{{\arccos (k)}}{3} + \frac{{2\pi }}{3}) - b}}{{3a}}\)
+</template>
+
+<template id='bac3__TH2__x'>
+  \(* x = \frac{{\sqrt \Delta |k|}}{{3ak}}\left( {\sqrt[3]{{|k| + \sqrt {{k^2} - 1} }} + \sqrt[3]{{|k| - \sqrt {{k^2} - 1}
+  }}} \right) - \frac{b}{{3a}}\)
+</template>
+
+<template id='bac3__TH3__x'>
+  \(\frac{{ - b + \sqrt[3]{{{b^3} - 27{a^2}d}}}}{{3a}}\)
+</template>
+
+<template id='bac3__TH4__x'>
+  \(x = \frac{{\sqrt {|\Delta |} }}{{3a}}\left( {\sqrt[3]{{k + \sqrt {{k^2} + 1} }} + \sqrt[3]{{k - \sqrt {{k^2} + 1} }}} \right)
+  - \frac{b}{{3a}}\)
+</template>
+
+<template id='bac4__TH2__x'>
+  \(x = \pm \sqrt {\frac{{ - b}}{{2a}}} = \pm \)
+</template>
+
+<template id='bac4__TH2_b2a'>
+
+  \(x = \pm \sqrt {\frac{{ - b}}{{2a}}} = \pm \sqrt {\frac{{ - b}}{{2a}}} = \pm \)
+</template>
+
+<template id='bac4__TH3__x'>
+  \(x = \pm \sqrt {\frac{{ - b - \sqrt \Delta }}{{2a}}} = \pm \)
+</template>
+
+<template id='bac4__TH4__x'>
+  \(x = \pm \sqrt {\frac{{ - b + \sqrt \Delta }}{{2a}}} = \pm \)
+</template>
+
+<template id='bac4__TH5__x1'>
+  \(x = \pm \sqrt {\frac{{ - b - \sqrt \Delta }}{{2a}}} = \pm \)
+</template>
+
+<template id='bac4__TH5__x2'>
+  \(x = \pm \sqrt {\frac{{ - b + \sqrt \Delta }}{{2a}}} = \pm \)
+</template>
+
+<template id='axbyc__TH1__rutgon'>
+  \(\left\{ \begin{array}{l} x = \frac{{ - b}}{a}y + \frac{c}{a}\\ y \in R \end{array} \right.\)
+</template>
+
+<template id='axbyc__TH2__rutgon'>
+  \(\left\{ \begin{array}{l} x \in R\\ y = \frac{{ - a}}{b}x + \frac{c}{b} \end{array} \right.\)
+</template>
+

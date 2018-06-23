@@ -1,0 +1,425 @@
+// Color 
+$colorGreen: #59bc65;
+$colorGreenHover:rgb(54, 165, 69);
+$colorGreenDarker: #1e5325;
+$thapPhan: 43px;
+
+ 
+.btn {
+	padding: 10px;
+  border-radius: 5px;
+  background: $colorGreen;
+  transition: all 0.2s ease;
+  color: white;
+  font-size: 13px;
+  border: none;
+  &:hover {
+    background: $colorGreenHover;
+    outline: 0.3px solid $colorGreenDarker;
+  }
+}
+
+.width-95 {
+  width: 95px;
+}
+
+.transform {
+    transition: all 0.5s ease-out;
+}
+
+.nangcao_transition {
+    transition: all 0.3s ease;
+}
+.nangcao_transfrom_translate_out {
+   transform: translate(0,30px);
+   opacity: 0.1;
+}
+
+#maytinh {
+    position: absolute;
+    z-index: 9;
+    background-color: #757575;
+    border: 1px solid #d3d3d3;
+    border-radius: 5px;
+    width: 400px;
+}
+
+#maytinh.animate {
+    width: 95px;
+    height: 45px;
+}
+
+#maytinhheader {
+    padding: 5px;
+    /* height: 30px; */
+    text-align: left;
+    cursor: move;
+    z-index: 10;
+    background-color: #0099ff;
+    /* border-top-left-radius: 5px;
+    border-top-right-radius: 5px; */
+    border-radius: 5px;
+    color: #fff;
+}
+
+.faToggle {
+    font-size: 30px !important;
+}
+
+/* GHIM */
+#ghim {
+    cursor: pointer;
+    font-size: 25px !important; 
+    position: relative;
+    top: 7px;
+    left: -5px;
+}
+
+#ghim:hover {
+    color: rgba(226, 226, 226, 0.979);
+    transition: all 0.15s ease-in;
+}
+
+.ghimChecked {
+    color: #7cfd8e;
+}
+
+/* tooltip */
+.tooltip {
+    position: relative;
+    float: right;
+    display: inline-block;
+    /* border-bottom: 1px dotted black; */
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 80px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 160%;
+    left: -230%;
+    margin-left: 0px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: -35%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color:  transparent transparent #555 transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+/* Nut toggle slice giua on va off */
+.custom-check {
+  width: 80px;
+  height: 30px;
+  border-radius: 30px;
+  border: 2px solid #e5e5e5;
+  background: #f5f5f5;
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.75);
+  box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.75);
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.custom-check input {
+  display: none;
+}
+.custom-check i {
+  width: 27px;
+  height: 27px;
+  border-radius: 30px;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -1px;
+  border: 2px solid #b9b9b9;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  background: #ececec;
+  background: -moz-radial-gradient(center, ellipse cover, #ececec 0%, #c8c8c8 100%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #ececec), color-stop(100%, #c8c8c8));
+  background: -webkit-radial-gradient(center, ellipse cover, #ececec 0%, #c8c8c8 100%);
+  background: -o-radial-gradient(center, ellipse cover, #ececec 0%, #c8c8c8 100%);
+  background: -ms-radial-gradient(center, ellipse cover, #ececec 0%, #c8c8c8 100%);
+  background: radial-gradient(ellipse at center, #ececec 0%, #c8c8c8 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ececec', endColorstr='#c8c8c8', GradientType=1);
+}
+.custom-check input:checked + i {
+  left: 50px;
+}
+.custom-check input + i + span {
+  display: block;
+}
+.custom-check input + i + span:after {
+  position: absoulute;
+  display: block;
+  width: 73px;
+  padding-right: 30px;
+  height: 30px;
+  line-height: 32px;
+  content: "Robot";
+  background: #ce3e3e;
+  color: #992727;
+  font-size: 13px;
+  font-family: Arial, sans-serif;
+  font-weight: 600;
+  text-align: right;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.custom-check input:checked + i + span:after {
+  content: "Robot";
+  background: #59bc65;
+  color: #3a8f44;
+  width: 115px;
+  text-align: left;
+  padding-right: 0;
+  padding-left: 9px;
+}
+
+#main-congthuc {
+  width: 100%;
+  margin: 4px 0;
+  display: -webkit-flex; /* Safari */
+  -webkit-flex-flow: row wrap; /* Safari 6.1+ */
+  display: flex;
+  flex-flow: row wrap;
+}
+
+#main-congthuc-all {
+  width: 100%;
+  margin: 4px 0;
+  display: -webkit-flex; /* Safari */
+  -webkit-flex-flow: row wrap; /* Safari 6.1+ */
+  display: flex;
+  flex-flow: row wrap;
+  display: none;
+}
+
+.congthuc {
+  width: 28%;
+  height: 30px;
+  margin-left: 1%;
+  margin-bottom: 2px;
+  padding: 5px;
+  border-radius: 4px;
+  cursor: pointer;
+  background: #eee;
+  box-shadow: inset 0 0 5px rgba(255,255,255,0.75);
+  transition: all 0.15s;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.congthuc:hover {
+  color: rgb(2, 146, 2);
+}
+ 
+.congthuc:active {
+  outline: 0;
+  background: #fff;
+  box-shadow: inset 0 0 5px rgba(0,0,0,0.3);
+  border-color: none none none none;
+}
+
+.congthuc:focus {
+  outline: none;
+}
+
+.xemthem {
+  /* width: 11%; */
+  padding: 5px;
+  /* height: 30px; */
+  /* margin-left: 1%; */
+  border-radius: 4px;
+  background: #eee;
+  box-shadow: inset 0 0 5px rgba(255,255,255,0.75);
+  cursor: pointer;
+}
+
+.xemthem:active {
+  outline: 0;
+  background: #fff;
+  box-shadow: inset 0 0 5px rgba(0,0,0,0.3);
+  border-color: none none none none;
+}
+
+.xemthem:focus {
+  outline: none;
+}
+
+#btnShowXemThem {
+  background-color: #fff;
+  text-align: center;
+  cursor: pointer;
+}
+
+
+
+.nangcao-title {
+  .fa-times {
+    color: $colorGreenDarker;
+    position: absolute;
+    right: 10px;
+    top: 5.5px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    padding: 7px;
+    &:hover {
+      color: white;
+    }
+  }
+}
+
+#a,#b, #c {
+  font-size: 13px;
+}
+
+details {
+  summary {
+    cursor: pointer;
+    padding: 10px 0;
+    transition: all 0.25s ease;
+    &:hover {
+      background: #cef8d3;
+    }
+    :hover + * {
+      background: #cef8d3;
+    }
+    &:focus {
+      outline: none;
+    }
+  };
+  .error-message {
+    font-weight: bold;
+  }
+}
+
+.ketqua {
+  padding-left: 65px;
+}
+
+.thapphan {
+  height: $thapPhan;
+  p {
+    position: relative;
+    top: 30%;
+  }
+  .hainghiemkep {
+    display: inline-block;
+    position: relative;
+    top: -8px;
+    height: 35px;
+    .tu {
+      display: inline-block;
+      padding-bottom: 3px;
+      border-bottom: 0.4px solid blue;
+    };
+    .mau {
+      position: absolute;
+      top: 70%;
+      left: 3px;
+    }
+  }
+
+  .co2nghiem {
+    display: inline-block;
+    position: relative;
+    top: -8px;
+    height: 35px;
+    .tu {
+      display: inline-block;
+      padding-bottom: 3px;
+      border-bottom: 0.4px solid blue;
+    };
+    .mau {
+      position: absolute;
+      top: 70%;
+      left: 30%;
+    }
+    .mau2 {
+      position: absolute;
+      top: 70%;
+    }
+    
+  }
+
+  .canbac {
+    border-top: 0.4px solid blue;
+  }
+  .kq1 {
+    padding-left: 20px;
+  }
+  
+}
+.nghiem {
+  color: red !important;
+  .tu {
+    border-bottom: 0.4px solid red !important;
+  }
+  .canbac {
+    border-top: 0.4px solid red !important;
+  }
+}
+
+.ml-10 {
+  margin-left: 20px;
+}
+
+.mr-10 {
+  margin-right: 20px;
+}
+
+.mr-5 {
+  margin-right: 5px;
+}
+
+.mr-2 {
+  margin-right: 2px;
+}
+
+// begin guide input
+.guide-input-item {
+  //margin: 5px 5px 5px 10px;
+}
+// end guide input 
+
+.canbac {
+  border-top: 0.4px solid rgb(0, 0, 0);
+}
+
+// Guide Input 
+.guide-input {
+  &__item {
+    margin: 5px 5px 5px 10px;
+  }
+}

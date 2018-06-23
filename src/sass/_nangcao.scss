@@ -1,0 +1,76 @@
+#nangcao {
+    margin: 0;
+    padding: 0;
+    width: 400px;
+    /* height: 200px; */
+    position: absolute;
+    opacity: 1;
+    display: none;
+    border-radius: 5px;
+    background: rgb(247, 247, 247);
+}
+
+.nangcao-title h3{
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+    background-color: #59bc65;
+    color: white;
+}
+
+.nangcao-debai {
+    font-size: 19px;
+    padding: 10px 20px 5px 20px;
+}
+
+.nangcao-input-nhap {
+    margin-right: 2px;
+    padding: 5px;
+    width: 60px;
+    height: 18px;
+    font-size: 16px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.nangcao-input-nhap:focus {
+    outline: none;
+}
+
+.nangcao-ketqua {
+    padding: 2px 20px;
+}
+
+#debai p, #baigiai p {
+    margin: 5px 0;
+    font-size: 16px;
+    color: blue;
+}
+
+#debai b {
+    color: red;
+} 
+
+#error-message-pt2 {
+    display: none;
+    color: red;
+    padding: 2px 20px;
+}
+
+#btnXemBaiGiai {
+    display: none;
+    cursor: pointer;
+    outline: none;
+}
+
+#baigiai {
+    display: none;
+    margin: 2px 20px 10px 20px;
+}
+
+.displayBlock {
+    display: block !important;
+}

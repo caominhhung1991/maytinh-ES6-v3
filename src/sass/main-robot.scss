@@ -1,0 +1,90 @@
+/* make drag container visible */
+div#redips-drag {
+  display: table;
+  background: rgb(233, 233, 233);
+  width: 100%;
+}
+
+/* table */
+div#redips-drag table {
+  background-color: #eee;
+  width: 100%;
+	border-collapse: collapse;
+	/* margin: 7px;x */
+}
+
+/* table cells */
+div#redips-drag td {
+  /* width: 100%; */
+  /* border: 1px solid navy; */
+	/* height: 50px; */
+	text-align: center;
+	font-size: 10pt;
+}
+
+/* drag object */
+.redips-drag {
+  /* margin: auto; */
+	text-align: center;
+	width: 129px;
+  height: 23px;
+  font-family: Arial,sans-serif;
+	line-height: 23px;
+	border: 1px solid SteelBlue;
+	background-color: white;
+	font-size: 10pt; /* needed for cloned object */
+	/* round corners */
+	border-radius: 4px; /* Opera, Chrome */
+	-moz-border-radius: 4px; /* FF */
+}
+
+/* orange elements */
+.orange {
+	border: 2px solid #FF8A58;
+}
+
+/* forbidden cells */
+.redips-mark {
+	background-color: #ccc;
+}
+
+/* trash cell */
+.redips-trash {
+	color: white;
+	background-color: SteelBlue;
+}
+
+/* styles for user defined overflow td */
+td#overflow {
+	padding-bottom: 6px;
+}
+	td#overflow div {
+		float: left;
+		margin-left: 5px;
+		margin-top: 5px;
+	}
+
+/* space between radio/checkbox and text */
+div#redips-drag input {
+	margin-right: 10px;
+}
+
+/* margins for drop down menu */
+#dropDown {
+	margin: 7px 0 0 7px;
+}
+
+/* text style */
+.mycontrols {
+	margin: 5px;
+	color: grey;
+	font-size: 16px;
+}
+
+#mini {
+	display: none;
+	margin-top: 5px;
+}
+
+@import './maytinh.scss';
+@import './nangcao.scss';
